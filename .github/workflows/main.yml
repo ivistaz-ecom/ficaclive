@@ -1,0 +1,25 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy FICAC pages
+        uses: appleboy/ssh-action@master
+
+        with:
+          host: ${{ secrets.SSH_HOST }} # Your server's IP address
+          username: ${{ secrets.SSH_USERNAME }} # Your server's username
+          key: ${{ secrets.SSH_KEY }} # Your server's SSH private key
+          password: ${{ secrets.SSH_PASS }} # Your server's SSH password
+
+          script: |
+            cd /home/ficacweb/web/staging.ficacworld.org/public_html
+            git pull origin main
+            npm install
+            npm run build
+            pm2 restart ficacstaging

@@ -1,0 +1,10 @@
+{
+    "SERVER_URL": "https://beta.ficacworld.org/wp-json/wp/v2/",
+    "SERVER_FROM": "https://beta.ficacworld.org/wp-json/",
+    "SERVER":"28", 
+
+    "notes " : "this is for developer/server ppl referencs",
+    "if you are using staging server(wordpress)" : "use SERVER id = 28 ",
+    "if you are using Live server(wordpress)" : "use SERVER id = 29 "
+}
+
