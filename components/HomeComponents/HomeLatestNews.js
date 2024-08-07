@@ -29,16 +29,16 @@ const HomeLatestNews = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 2,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          infinite: true,
-
         },
       },
       {
@@ -46,6 +46,7 @@ const HomeLatestNews = () => {
         settings: {
           slidesToShow: 1,
           dots: true,
+          arrows : false,
         },
       },
       {
@@ -61,18 +62,22 @@ const HomeLatestNews = () => {
 
   return (
     <>
-
-    <style>
-      {
-        `
+      <style>
+        {`
          .custom-height {
             height:320px;
           }
-        
-        `
-      }
-     
-    </style>
+        .slick-next:before {
+    content: '→';
+    color: black;
+}
+.slick-prev:before {
+    content: '←';
+    color: black !important;
+}
+
+        `}
+      </style>
       <Container className="">
         <h3 className="fs-1 txt-dark text-center py-lg-5">Latest News </h3>
         {/* <Carousel
