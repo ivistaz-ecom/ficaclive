@@ -46,7 +46,7 @@ const HomeLatestNews = () => {
         settings: {
           slidesToShow: 1,
           dots: true,
-          arrows : false,
+          arrows: false,
         },
       },
       {
