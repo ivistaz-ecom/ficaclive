@@ -61,7 +61,7 @@ const HomeBannerContent = () => {
                     <p className='fs-5 fw-200'>The Board of Directors reviews the recommendation and submits the application with all recommendations to the FICAC AISBL General Assembly Meeting, which is usually held every 3 years in conjunction with the World Congress of Consuls. </p>
                     <p className='fs-5 fw-200'>A yes vote means that the Corps/Association of Regional Associations can become a Member of FICAC, once membership fees for the current year have been paid.</p>
                     <Link
-                         href="/Membership Procedure.pdf"
+                         href="/documents/Membership Procedure 2024_final.pdf"
                          target='_blank'
                          className='btn btn-primary px-3 py-2 fs-5 wbg-blue border-0'
                     >
@@ -76,7 +76,7 @@ const HomeBannerContent = () => {
                     <h4 className='txt-dark fw-600 fs-3'>Application Form Membership</h4>
                     <p className='fs-5 fw-200'>If you wish to become a Member of FICAC AISBL, please complete the Application Form below.</p>
                     <Link
-                         href="/Membership Form.pdf"
+                         href="/documents/Application Form 2024.pdf"
                          target='_blank'
                          className='btn btn-primary px-3 py-2 fs-5 wbg-blue border-0'
                     >
